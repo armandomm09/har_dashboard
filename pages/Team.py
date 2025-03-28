@@ -20,7 +20,7 @@ st.set_page_config(page_title="Detalles de Equipo - Midwest Regional", layout="w
 st.title("Detalles de Equipos - Midwest Regional")
 
 # Obtener la API key de TBA desde variables de entorno
-TBA_API_KEY = os.getenv("TBA_API_KEY", "TU_API_KEY_AQUI")
+TBA_API_KEY = st.secrets["TBA_API_KEY"]
 headers = {"X-TBA-Auth-Key": TBA_API_KEY}
 
 # ---------------------------

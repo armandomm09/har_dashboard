@@ -24,7 +24,7 @@ st.title("Dashboard de Scouting - Midwest Regional")
 # Sección: Datos del Evento desde The Blue Alliance (TBA)
 # ---------------------------
 st.header("Datos del Evento (The Blue Alliance)")
-TBA_API_KEY = os.getenv("TBA_API_KEY", "TU_API_KEY_AQUI")
+TBA_API_KEY = st.secrets["TBA_API_KEY"]
 headers = {"X-TBA-Auth-Key": TBA_API_KEY}
 
 tba_event_url = f"https://www.thebluealliance.com/api/v3/event/{main_event}"
