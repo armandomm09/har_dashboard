@@ -117,7 +117,7 @@ if team_data_list:
         df['coral_l4'] = df['epa'].apply(lambda x: x.get("breakdown", {}).get("coral_l4") if isinstance(x, dict) else None)
         df['algae_points'] = df['epa'].apply(lambda x: x.get("breakdown", {}).get("total_algae_points") if isinstance(x, dict) else None)
         df['barge_points'] = df['epa'].apply(lambda x: x.get("breakdown", {}).get("barge_points") if isinstance(x, dict) else None)
-        df['epa_total_mean'] = df['epa'].apply(lambda x: x.get("total_points", {}).get("mean") if isinstance(x, dict) else None)
+        df['epa_total_mean'] = df['epa'].apply(lambda x: x.get("norm") if isinstance(x, dict) else None)
     # Seleccionar columnas de interés: número de equipo, nombre y estadísticas
     columnas = {
         'epa_total_mean': "EPA Promedio",
