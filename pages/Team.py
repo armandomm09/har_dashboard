@@ -26,7 +26,7 @@ headers = {"X-TBA-Auth-Key": TBA_API_KEY}
 # ---------------------------
 # Funciones en Cache para Consultas
 # ---------------------------
-@st.cache_data
+# @st.cache_data
 def get_team_keys():
     url = f"https://www.thebluealliance.com/api/v3/event/{main_event}/teams/keys"
     response = requests.get(url, headers=headers)
@@ -34,7 +34,7 @@ def get_team_keys():
         return response.json()
     return []
 
-@st.cache_data
+# @st.cache_data
 def get_team_details(team_number):
     url = f"https://api.statbotics.io/v3/team_event/{team_number}/{main_event}"
     response = requests.get(url)
@@ -42,7 +42,7 @@ def get_team_details(team_number):
         return response.json()
     return {}
 
-@st.cache_data
+# @st.cache_data
 def get_team_matches(team_number):
     # Matches jugados (resultados reales)
     url = f"https://www.thebluealliance.com/api/v3/team/frc{team_number}/event/{main_event}/matches/simple"
@@ -51,7 +51,7 @@ def get_team_matches(team_number):
         return response.json()
     return []
 
-@st.cache_data
+# @st.cache_data
 def get_match_keys_for_predictions(team_number):
     # Keys de matches programados (para predicción)
     url = f"https://www.thebluealliance.com/api/v3/team/frc{team_number}/event/{main_event}/matches/keys"
@@ -60,7 +60,7 @@ def get_match_keys_for_predictions(team_number):
         return response.json()
     return []
 
-@st.cache_data
+# @st.cache_data
 def get_match_prediction(match_key):
     # Consulta la predicción usando la key (con main_event)
     url = f"https://api.statbotics.io/v3/match/{match_key}"
