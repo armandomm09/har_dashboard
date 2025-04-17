@@ -17,7 +17,7 @@ main_event = "2025dal"  # Usamos el mismo evento para todo
 
 # Configuración de la página
 st.set_page_config(page_title="Detalles de Equipo - Champs Daly division", layout="wide")
-st.title("Detalles de Equipos - Midwest Regional")
+st.title("Detalles de Equipos - Champs Daly division")
 
 # Obtener la API key de TBA desde variables de entorno
 TBA_API_KEY = st.secrets["TBA_API_KEY"]

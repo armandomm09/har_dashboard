@@ -18,7 +18,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Dashboard de Scouting - Midwest Regional")
+st.title("Dashboard de Scouting - Champs Daly division")
 
 # ---------------------------
 # Sección: Datos del Evento desde The Blue Alliance (TBA)
