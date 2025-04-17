@@ -10,11 +10,11 @@ load_dotenv()
 # ---------------------------
 # Variable principal del evento
 # ---------------------------
-main_event = "2025ilch"
+main_event = "2025dal"
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Dashboard Scouting FRC - Midwest Regional",
+    page_title="Dashboard Scouting FRC - Champs Daly division",
     layout="wide"
 )
 

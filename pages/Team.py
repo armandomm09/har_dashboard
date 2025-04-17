@@ -13,10 +13,10 @@ load_dotenv()
 # ---------------------------
 # Variables Principales
 # ---------------------------
-main_event = "2025ilch"  # Usamos el mismo evento para todo
+main_event = "2025dal"  # Usamos el mismo evento para todo
 
 # Configuración de la página
-st.set_page_config(page_title="Detalles de Equipo - Midwest Regional", layout="wide")
+st.set_page_config(page_title="Detalles de Equipo - Champs Daly division", layout="wide")
 st.title("Detalles de Equipos - Midwest Regional")
 
 # Obtener la API key de TBA desde variables de entorno
